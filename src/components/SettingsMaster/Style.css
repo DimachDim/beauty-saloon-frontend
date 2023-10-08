@@ -1,0 +1,138 @@
+/*Контейнер кнопок*/
+.settings-master{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+/*Одна кнопка*/
+.settings-master>div{
+    border: 1px solid rgba(0, 0, 255, 0.316);
+    color: rgba(1, 1, 45, 0.762);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14pt;
+    margin-bottom: 10px;
+    min-height: 40px;
+    border-radius: 2px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.settings-master>div:hover{
+    box-shadow: 0px 2px;
+}
+
+
+/*============ Выбор Специализации =============*/
+
+/*Контейнер специализайции*/
+.settings-master_spec-container{
+    border: 1px solid rgba(0, 0, 255, 0.24);
+    min-height: 40px;
+    font-size: 16pt;
+    font-weight: 400;
+    padding-left: 30px;
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;   
+    display: flex;
+    align-items: center;
+}
+/*Чекбокс*/
+.settings-master_spec-container>input{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+
+
+/*============ Выбор Услуг =============*/
+
+/*Контейнер специализации*/
+.settings-master_spec-box{
+    border: 1px solid rgba(0, 0, 255, 0.248);
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    min-width: 250px;
+
+    @media(max-width:800px){
+        width: 95%
+    }
+}
+/*Заголовок специализации*/
+.settings-master_spec-box>h3{
+    margin: 0;
+    border: 1px solid rgba(0, 0, 255, 0.248);
+    text-align: center;
+    font-size: 20pt;
+    color: rgba(1, 1, 53, 0.771);
+}
+/*Контейнер услуги*/
+.spec-box_service-container{
+    border: 1px solid rgba(0, 0, 255, 0.284);
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 6fr 1fr 0.1fr;
+    padding-left: 30px;
+}
+.spec-box_service-container>div{
+    min-height: 40px;
+    font-weight: 500;
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+}
+/*Кнопка удалить*/
+.spec-box_service-container>button{
+    border: 1px solid rgba(0, 0, 255, 0.284);
+    background-color: rgba(255, 0, 0, 0.245);
+    cursor: pointer;
+}
+.spec-box_service-container>button:hover{
+    background-color: rgba(189, 0, 0, 0.442);
+}
+
+
+
+/*Форма*/
+.spec-box_form{
+    border: 1px solid rgba(0, 0, 255, 0.284);
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+
+    @media(max-width:800px){
+        width: 80%
+    }
+}
+.spec-box_form>select{
+    margin-top: 10px;
+    min-height: 30px;
+    font-size: 14pt;
+}
+.spec-box_form>input{
+    margin-top: 10px;
+    min-height: 30px;
+    font-size: 14pt;
+}
+.spec-box_form>button{
+    margin-top: 10px;
+    min-height: 30px;
+    font-size: 14pt;
+    display: block;
+    cursor: pointer;
+    min-width: 100px;
+    border: 1px solid rgb(147, 197, 237);
+    background-color: rgb(225, 244, 250);
+    padding: 10px;
+    margin: 10px;
+}

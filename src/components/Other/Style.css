@@ -1,0 +1,14 @@
+/*Кнопка назад*/
+.btn-back{
+    display: block;
+    cursor: pointer;
+    min-width: 100px;
+    border: 1px solid rgb(147, 197, 237);
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    margin-left: 50px;
+    font-size: 10pt;
+    color: rgb(85, 92, 103);
+}

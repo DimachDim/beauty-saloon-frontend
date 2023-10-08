@@ -1,0 +1,79 @@
+/*Стиль презентации даты*/
+.date-plan_present-date{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: rgb(85, 85, 85);
+    border-bottom: 3px solid rgb(159, 193, 255);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/*Стиль шапки*/
+.head-table-time-box{
+    font-size: 10pt;
+    min-height: 50px;
+    min-width: 340px;
+    border: 1px solid rgba(0, 0, 255, 0.275);
+    background-color: white;
+    text-align: center;
+
+    @media(max-width:550px){
+        font-size: 6pt;
+    }
+}
+.head-table-time-box>div{
+    background-color: rgb(255, 255, 255);
+    border: 0.5px solid rgba(0, 0, 255, 0.203);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Контейнер одного времени*/
+.time-box{
+    background-color: white;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 10pt;
+    width: 100%;
+    min-width: 340px;
+
+    @media(max-width:550px){
+        font-size: 6pt;
+    }
+}
+.time-box>div{
+    border: 0.5px solid rgba(0, 0, 255, 0.314);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Кнопка*/
+.btn-apointment{
+    display: block;
+    cursor: pointer;
+    border: 1px solid rgb(147, 197, 237);
+    background-color: rgb(225, 244, 250);
+    padding: 10px;
+    margin: 10px;
+
+    @media(max-width:550px){
+        font-size: 6pt;
+    }
+}
+.btn-apointment:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*Если записан пользователь*/
+.time-box-client-you{
+    background-color: rgba(0, 128, 0, 0.263);
+}
+/*Если записан не пользователь*/
+.time-box-client-not-you{
+    background-color: rgba(255, 0, 0, 0.286);
+}

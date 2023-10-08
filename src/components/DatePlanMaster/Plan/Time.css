@@ -1,0 +1,37 @@
+/*Коньейнер для одной записи*/
+.time-conteiner-master{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    margin-top: 10px;
+    min-width: 400px;
+}
+.time-conteiner-master>div{
+    border: 1px solid rgba(0, 0, 255, 0.267);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Контейнер услуги с ценой*/
+.time-conteiner-master-services{
+
+    display: flex;
+    flex-direction: column;
+}
+.time-conteiner-master-services>div{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 255, 0.188);
+    width: 100%;
+}
+/*Кнопка удаления*/
+.time-conteiner-master>button{
+    display: block;
+    background-color: rgba(255, 0, 0, 0.415);
+    border: 1px solid rgba(0, 0, 255, 0.267);
+    font-size: 14pt;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.596);
+}
+.time-conteiner-master>button:hover{
+    background-color: rgba(52, 1, 1, 0.415);
+}

@@ -1,0 +1,79 @@
+/*контейнер формы*/
+.form-add-time{
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 255, 0.351);
+    background-color: white;
+
+    @media(max-width:500px){
+        width:100%;
+    }
+}
+/*Заголовок формы*/
+.form-add-time>p{
+    margin: 0;
+    font-size: 16pt;
+    border: 1px solid rgba(0, 0, 255, 0.351);
+    text-align: center;
+}
+
+/*Инпут ввода времени*/
+#form-add-time_inpyt-time{
+    display: block;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    background-color: rgba(0, 0, 255, 0.163);
+}
+
+/*Контейнер одной специализации*/
+.form-add-time_specialization-container{
+    border: 1px solid rgba(0, 0, 255, 0.351);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2px;
+    padding-left: 20px;
+}
+
+/*заголовок специализации*/
+.form-add-time_specialization-container>p{
+    margin: 0;
+    font-size: 14pt;
+    
+    font-weight: 500;
+}
+
+/*Кнопка выбрать всё*/
+.form-add-time_specialization-container>p>button{
+    cursor: pointer;
+    border: 1px solid rgb(147, 197, 237);
+    background-color: rgb(225, 244, 250);
+    box-shadow: -0.5px 2px 3px 0px;
+}
+.form-add-time_specialization-container>p>button:hover{
+    background-color: rgb(180, 193, 197);
+}
+
+/*Контейнер услуги*/
+.form-add-time_specialization-container>div>div>p{
+    margin: 0;
+    margin-bottom: 5px;
+    background-color: rgba(0, 0, 255, 0.077);
+    padding-left: 20px;
+}
+
+/*кнопка добавить*/
+.form-add-time>button{
+    cursor: pointer;
+    font-size: 14pt;
+    width: 90%;
+    height: 40px;
+    display: block;
+    margin: 10px  auto;
+    border: 1px solid rgb(147, 197, 237);
+    background-color: rgb(225, 244, 250);
+    
+}

@@ -1,0 +1,102 @@
+/*Контейнер одной специализации с услугами*/
+.spesialization-service-container{
+    border: 1px solid rgba(0, 0, 255, 0.315);
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+
+    @media(max-width:800px){
+        width:100%
+    }
+}
+.spesialization-service-container>h2{
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 255, 0.315);
+    text-align: center;
+    color: rgba(0, 0, 77, 0.768);
+}
+
+
+/*Контейнер услуги*/
+.spesialization-service-container_service{
+    border: 1px solid rgba(0, 0, 255, 0.315);
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    justify-content: space-between;
+    font-size: 16pt;
+    color: rgba(0, 0, 77, 0.768);
+    font-weight: 500;
+    
+
+    @media(max-width:800px){
+        width:80%
+    }
+}
+/*Кнопка удаления*/
+.spesialization-service-container_service>button{
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+}
+.spesialization-service-container_service>button:hover{
+    background-color: rgb(210, 172, 172);
+}
+
+
+/*=========== ФОРМА============*/
+/*Заголовок*/
+.spesialization-service-container>p{
+    margin: 0;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 255, 0.315);
+    margin-top: 40px;
+    font-size: 16pt;
+    color: rgba(0, 0, 77, 0.768);
+    font-weight: 500;
+}
+.spesialization-service-container>input{
+    width: 50%;
+    margin: 10px auto;
+    min-height: 30px;
+    font-size: 16pt;
+    font-weight: 500;
+    text-align: center;
+    
+}
+.spesialization-service-container>button{
+    border: 1px solid rgba(0, 0, 255, 0.315); 
+    min-height: 40px;
+    background-color: rgba(0, 221, 255, 0.201);   
+    cursor: pointer;
+    font-size: 14pt;
+    width: 50%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

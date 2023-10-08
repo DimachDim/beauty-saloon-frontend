@@ -1,0 +1,21 @@
+/*Кнопки в настройках*/
+.setting-item{
+   background-color: white;
+   border: 1px solid rgba(0, 0, 255, 0.255);
+   width: 90%;
+   margin: auto;
+   margin-top: 10px;
+   min-height: 40px;
+   display: flex;
+   align-items: center;
+   padding-left: 30px;
+   font-size: 16pt;
+   cursor: pointer;
+   color: rgba(0, 0, 77, 0.637);
+   font-weight: 500;
+}
+.setting-item:hover{
+    box-shadow: 0 2px;
+}
+
+

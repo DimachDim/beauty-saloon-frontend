@@ -1,0 +1,66 @@
+/*Контейнер одной специализации*/
+.sitting-specialization_spec-container{
+    width: 80%;
+    border: 1px solid rgba(0, 0, 255, 0.315);
+    margin: auto;
+    margin-top: 10px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 16pt;
+    color: rgba(0, 0, 77, 0.768);
+    font-weight: 500;
+}
+
+/*Кнопка удаления*/
+.sitting-specialization_spec-container>button{
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+}
+.sitting-specialization_spec-container>button:hover{
+    background-color: rgb(210, 172, 172);
+}
+
+/*Форма*/
+.sitting-specialization_form{
+    border: 1px solid rgba(0, 0, 255, 0.315);
+    width: 30%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16pt;
+    min-width: 200px;
+
+    @media(max-width:800px){
+        width:80%
+    }
+}
+.sitting-specialization_form>p{
+    margin:10px 0;
+    font-size: 16pt;
+    color: rgba(0, 0, 77, 0.768);
+    font-weight: 500;
+}
+.sitting-specialization_form>input{
+    text-align: center;
+    font-size: 16pt;
+    color: rgba(0, 0, 77, 0.768);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.sitting-specialization_form>button{
+    border: 1px solid rgba(0, 0, 255, 0.315); 
+    min-height: 40px;
+    background-color: rgba(0, 221, 255, 0.201);   
+    cursor: pointer;
+    font-size: 14pt;
+}

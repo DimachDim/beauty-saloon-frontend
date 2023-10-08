@@ -1,0 +1,11 @@
+/*Стиль презентации даты*/
+.date-plan_present-date{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: rgb(85, 85, 85);
+    border-bottom: 3px solid rgb(159, 193, 255);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}

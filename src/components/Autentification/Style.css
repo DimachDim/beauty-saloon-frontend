@@ -1,0 +1,63 @@
+body{
+    background: linear-gradient(rgb(255, 255, 255), rgb(223, 233, 253));
+    min-height: 100vh;
+}
+
+/*Контейнер аутентификации*/
+.aut-container{
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*Контейнер кнопок*/
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+}
+/*Кнопки*/
+.aut-container a{
+    display: block;
+    cursor: pointer;
+    min-width: 100px;
+    border: 1px solid rgb(147, 197, 237);
+    background-color: rgb(225, 244, 250);
+    padding: 10px;
+    margin: 10px;
+    box-shadow: -0.5px 2px 3px 0px;
+}
+.aut-container a:hover{
+    background-color:rgb(184, 227, 240); ;
+}
+
+/*Форма*/
+.aut-form{
+    border: 1px solid rgb(101, 179, 243);
+    background: linear-gradient(rgb(255, 255, 255), rgb(255 255 255));
+    padding: 20px 0;
+    margin-top: 20px;
+    width: 20%;
+    margin: auto;
+    min-width: 200px;
+    box-shadow: -6px 7px 14px 0px;
+
+    @media(max-width:800px){
+        width:95%
+    }
+}
+
+/*Кнопки отправки данных*/
+.aut-form button{
+    display: block;
+    cursor: pointer;
+    min-width: 100px;
+    border: 1px solid rgb(147, 197, 237);
+    border-radius: 2px;
+    background-color: rgb(240, 249, 252);
+    padding: 10px;
+    margin: auto;
+}
+.aut-form button:hover{
+    background-color: rgb(182, 213, 245);
+}

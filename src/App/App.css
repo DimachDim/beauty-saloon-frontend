@@ -1,0 +1,104 @@
+/*Главный контейнер*/
+.app-container{
+    
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    
+}
+
+/*Главный контейнер навигации*/
+.navbar-container{
+    display:flex;
+    min-height: 100vh;
+    
+}
+
+/*Кнопка показать*/
+.navbar-container>button{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    cursor: pointer;
+    display: none;
+
+    @media(max-width:800px) {    
+        margin-left: 0px;
+        display: block;
+    }
+}
+/*Контейнер навигации*/
+.navbar-container>nav{
+    width: 200px;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255 255 255));
+    box-shadow: -6px 7px 14px 0px;
+    border: 1px solid rgb(101, 179, 243);
+    position: fixed;
+    min-height: 100vh;
+    
+    @media(max-width:800px) {
+        margin-left: -200px;
+        position: fixed;
+    }
+}
+
+/*Список*/
+.navbar-container nav>ul{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/*Копки навигации*/
+.navbar-btn{
+    display: flex;
+    border: 1px solid rgb(147, 197, 237);
+    background-color: rgb(42, 43, 65);
+    color: white;
+    margin-top: 5px;
+    padding-left: 10px;
+    text-decoration: none;
+    min-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*Активная кнопка навигации*/
+.navbar-container .active{
+    background-color: blue;
+    font-size: 16pt;
+}
+
+/*Контейнер с контентом*/
+.content-container{
+    background: linear-gradient(rgb(255, 255, 255), rgb(238, 244, 255));
+    width: 100%;
+    margin-left: 200px;
+
+    @media(max-width:800px) {
+        margin-left: 0px;
+    }
+}
+
+
+
+/*СТИЛИ ЗАГОЛОВКОВ*/
+/*h1*/
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: rgb(85, 85, 85);
+    border-bottom: 3px solid rgb(159, 193, 255);
+    width: 80%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+

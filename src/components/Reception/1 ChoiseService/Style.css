@@ -1,0 +1,36 @@
+/*Контейнер специализации*/
+.specialization-box{
+    width: 40%;
+    margin: auto;
+    padding-left: 50px;
+    border: 1px solid rgb(232, 232, 232);
+    margin-top: 20px;
+    min-width: 300px;
+
+    @media(max-width:800px){
+        width:80%;
+    }
+}
+/*Заголовок специализации*/
+.specialization-box>h3{
+    color: rgb(59, 59, 59);
+    margin: auto;
+    border-bottom: 1px solid rgb(175, 175, 198);
+    font-size: 20pt;
+}
+/*Контейнер с инпутом*/
+.specialization-box>div{
+    font-size: 16pt;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+
+    @media(max-width:800px){
+        font-size:12pt;
+    }
+}
+/*Инпут*/
+.specialization-box>div>input{
+    width: 25px;
+    height: 25px;
+}

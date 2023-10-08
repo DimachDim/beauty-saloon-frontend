@@ -1,0 +1,26 @@
+/*Контенер с кнопками*/
+.reception-button-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    margin-top: 50px;
+}
+/*Кнопки*/
+.reception-button-container>button{
+    display: block;
+    cursor: pointer;
+    min-width: 100px;
+    border: 1px solid rgb(147, 197, 237);
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    font-size: 18pt;
+    color: rgb(85, 92, 103);
+    /*box-shadow: -0.5px 2px 3px 0px;*/
+}
+.reception-button-container>button:hover{
+    color: black;
+    font-size: 20pt;
+}
