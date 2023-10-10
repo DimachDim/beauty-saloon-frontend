@@ -2,13 +2,13 @@ import React from "react";
 import {BrowserRouter as Router, Route, NavLink, Routes} from 'react-router-dom';
 
 //Компаненты
-import LogoutContainer from "../components/Autentification/Logout/LogoutContainer";
-import ProfileContainer from "../components/Profile/ProfileContainer";
-import UsersContainer from "../components/Users/UsersContainer";
+import LogoutContainer from "../components/1 Autentification/11 Logout/LogoutContainer";
+import ProfileContainer from "../components/12 Profile/ProfileContainer";
+import UsersContainer from "../components/13 Users/UsersContainer";
 
-import SettingsBoss from "../components/SettingsBoss/SettingsBoss";
-import SpecializationsContainer from "../components/SettingsBoss/1 Specializations/SpecializationsContainer";
-import ServicesContainer from "../components/SettingsBoss/2 Services/ServicesContainer";
+import SettingsBoss from "../components/21 SettingsBoss/SettingsBoss";
+import SpecializationsContainer from "../components/21 SettingsBoss/1 Specializations/SpecializationsContainer";
+import ServicesContainer from "../components/21 SettingsBoss/2 Services/ServicesContainer";
 
 
 let ForBoss = (props) => {

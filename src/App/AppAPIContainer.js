@@ -10,8 +10,7 @@ import { PROFILE_INFO_URL } from "../Paths/Aut";
 import ForBoss from "./ForBoss";
 import ForMaster from "./ForMaster";
 import ForClient from './ForClient'
-import ProfileContainer from "../components/Profile/ProfileContainer";
-import AutContainer from "../components/Autentification/AutContainer";
+import AutContainer from "../components/1 Autentification/AutContainer";
 import PopUpContainer from '../components/PopUp/PopUpContainer'
 
 

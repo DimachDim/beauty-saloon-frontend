@@ -2,14 +2,14 @@ import React from "react";
 import {BrowserRouter as Router, Route, NavLink, Routes} from 'react-router-dom';
 
 //Компаненты
-import LogoutContainer from "../components/Autentification/Logout/LogoutContainer";
-import ScheduleContainer from '../components/ScheduleMaster/ScheduleContainer'
-import ProfileContainer from "../components/Profile/ProfileContainer";
-import UsersContainer from "../components/Users/UsersContainer";
-import DatePlanContainer from "../components/DatePlanMaster/DatePlanContainer";
-import SettingsMaster from "../components/SettingsMaster/SettingsMaster";
-import SpecializationContainer from "../components/SettingsMaster/1. MasterSpecialization/SpecializationContainer";
-import ServecesContainer from "../components/SettingsMaster/2. MasterServeces/ServecesContainer";
+import LogoutContainer from "../components/1 Autentification/11 Logout/LogoutContainer";
+import ScheduleContainer from '../components/32 ScheduleMaster/ScheduleContainer'
+import ProfileContainer from "../components/12 Profile/ProfileContainer";
+import UsersContainer from "../components/13 Users/UsersContainer";
+import DatePlanContainer from "../components/33 DatePlanMaster/DatePlanContainer";
+import SettingsMaster from "../components/31 SettingsMaster/SettingsMaster";
+import SpecializationContainer from "../components/31 SettingsMaster/1. MasterSpecialization/SpecializationContainer";
+import ServecesContainer from "../components/31 SettingsMaster/2. MasterServeces/ServecesContainer";
 
 let ForMaster = (props) => {
     //console.log(props)

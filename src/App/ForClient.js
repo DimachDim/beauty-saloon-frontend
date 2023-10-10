@@ -3,14 +3,14 @@ import {BrowserRouter as Router, Route, NavLink, Routes} from 'react-router-dom'
 
 
 //Компаненты
-import ProfileContainer from "../components/Profile/ProfileContainer";
-import ReceptionContainer from '../components/Reception/ReceptionContainer';
-import ChoiseServiceContainer from '../components/Reception/1 ChoiseService/ChoiseServiceContainer'
-import ScheduleContainer from "../components/ScheduleClient/ScheduleContainer";
-import DatePlanContainerService from "../components/Reception/1 ChoiseService/DatePlanClient/DatePlanContainer";
-import ChoiseMasterContainer from "../components/Reception/2 ChoiseMaster/ChoiseMasterContainer";
-import DatePlanContainerMaster from "../components/Reception/2 ChoiseMaster/DatePlanClient/DatePlanContainer";
-import LogoutContainer from "../components/Autentification/Logout/LogoutContainer";
+import ProfileContainer from "../components/12 Profile/ProfileContainer";
+import ReceptionContainer from '../components/41 Reception/ReceptionContainer';
+import ChoiseServiceContainer from '../components/41 Reception/1 ChoiseService/ChoiseServiceContainer'
+import ScheduleContainer from "../components/42 ScheduleClient/ScheduleContainer";
+import DatePlanContainerService from "../components/41 Reception/1 ChoiseService/DatePlanClient/DatePlanContainer";
+import ChoiseMasterContainer from "../components/41 Reception/2 ChoiseMaster/ChoiseMasterContainer";
+import DatePlanContainerMaster from "../components/41 Reception/2 ChoiseMaster/DatePlanClient/DatePlanContainer";
+import LogoutContainer from "../components/1 Autentification/11 Logout/LogoutContainer";
 
 let ForClient = (props) => {
     //console.log(props)
