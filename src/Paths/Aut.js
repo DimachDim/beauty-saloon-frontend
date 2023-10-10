@@ -1,4 +1,4 @@
-import { BASE_URL } from "../js/paths";
+import { BASE_URL } from "./Base";
 
 export const LOGIN_URL = BASE_URL + '/api/login'            //login
 export const REG_URL = BASE_URL + '/api/reg'                //registration
