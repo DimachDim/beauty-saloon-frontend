@@ -3,8 +3,8 @@ import requestFunc from '../../../js/requestFunc'
 
 
 //URLS
-import { GET_SPECIALIZATION_MASTER_URL } from "../../../js/paths";
-import { CHENGE_SPECIALIZATION_MASTER_URL } from "../../../js/paths";
+import { GET_SPECIALIZATION_MASTER_URL } from "../../../Paths/master/SettingMaster";
+import { CHENGE_SPECIALIZATION_MASTER_URL } from "../../../Paths/master/SettingMaster";
 
 //КОМПАНЕНТЫ
 import BtnBack from '../../Other/BtnBack'

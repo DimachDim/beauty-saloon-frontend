@@ -5,8 +5,8 @@ import requestFunc from "../../js/requestFunc";
 import saveCookie from "../../js/saveCookie"
 
 //URLS
-import { LOGIN_URL } from "../../js/paths";
-import { REG_URL } from "../../js/paths";
+import { LOGIN_URL } from "../../Paths/Aut";
+import { REG_URL } from "../../Paths/Aut";
 
 //КОМПАНЕНТЫ
 import Registration from "./Registration";

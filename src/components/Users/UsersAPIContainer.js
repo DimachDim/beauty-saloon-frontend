@@ -3,9 +3,9 @@ import React from "react";
 import requestFunc from "../../js/requestFunc";
 
 //URLS
-import { GET_USERS_URL } from "../../js/paths";
-import { DEL_USER_URL } from "../../js/paths";
-import { MASTER_USER_URL } from "../../js/paths";
+import { GET_USERS_URL } from "../../Paths/Users";
+import { DEL_USER_URL } from "../../Paths/Users";
+import { MASTER_USER_URL } from "../../Paths/Users";
 
 //КОМПАНЕНТЫ
 import UserBox from "./UserBox";

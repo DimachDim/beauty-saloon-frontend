@@ -3,9 +3,10 @@ import requestFunc from "../../../js/requestFunc";
 import './Style.css'
 
 //URLS
-import { ADD_SPECIALIZATION_URL } from "../../../js/paths";
-import { GET_SPECIALIZATION_URL } from "../../../js/paths";
-import { DEL_SPECIALIZATION_URL } from "../../../js/paths";
+import { ADD_SPECIALIZATION_URL } from "../../../Paths/boss/BossSetting";
+import { GET_SPECIALIZATION_URL } from "../../../Paths/boss/BossSetting";
+import { DEL_SPECIALIZATION_URL } from "../../../Paths/boss/BossSetting";
+
 //КОМПАНЕНТЫ
 import BtnBack from '../../Other/BtnBack'
 
@@ -22,8 +23,13 @@ class SpecializationsAPIContainer extends React.Component{
         //Запрашиваем у сервера данные
         let serverAnswer = await requestFunc(GET_SPECIALIZATION_URL, SID)
         
-        //Передаем данные в состояние
-        this.props.transferDataSpecializationAC(serverAnswer.data)
+        //Есди данные пришли
+        if(serverAnswer.data != undefined){
+            //Передаем данные в состояние
+            this.props.transferDataSpecializationAC(serverAnswer.data)
+        }else{
+            console.log('Ошибка')
+        }
     }
 
 

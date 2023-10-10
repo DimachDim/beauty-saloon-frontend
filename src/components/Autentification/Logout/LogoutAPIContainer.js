@@ -2,7 +2,7 @@ import React from "react";
 import requestFunc from "../../../js/requestFunc";
 
 //URLS
-import { LOGOUT_URL } from "../../../js/paths";
+import { LOGOUT_URL } from "../../../Paths/Aut";
 
 //КОМПАНЕНТЫ
 import Logout from "./Logout";

@@ -2,8 +2,8 @@ import React from "react";
 import requestFunc from "../../../js/requestFunc";
 
 //URLS
-import { GET_LIST_MASTERS_URL } from "../../../js/Paths/Client";
-import { GET_DATA_FOR_CALENDAR_URL } from "../../../js/Paths/Client";
+import { GET_LIST_MASTERS_URL } from "../../../Paths/client/Reseption";
+import { GET_DATA_FOR_CALENDAR_URL } from "../../../Paths/client/Reseption"; 
 
 //КОМПАНЕНТЫ
 import MasterBox from "./MasterBox";

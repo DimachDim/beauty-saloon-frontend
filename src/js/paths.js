@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://ce09056-django-m87qv.tw1.ru/nails'    //'http://127.0.0.1:8000/nails'    //Домаен бекенда
+export const BASE_URL = 'http://127.0.0.1:8000/nails'    //Домаен бекенда
 
 export const LOGIN_URL = BASE_URL + '/api/login'            //login
 export const REG_URL = BASE_URL + '/api/reg'                //registration

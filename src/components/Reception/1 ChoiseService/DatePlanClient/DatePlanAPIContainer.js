@@ -3,9 +3,9 @@ import requestFunc from "../../../../js/requestFunc";
 
 
 //URLS
-import { GET_DATA_FOR_DATE_URL } from "../../../../js/Paths/Client";
-import { SEND_DATA_APPOINTMENT_URL } from "../../../../js/Paths/Client";
-import { SEND_DATA_CANCEL_APPOINTMENT_URL } from "../../../../js/Paths/Client";
+import { GET_DATA_FOR_DATE_URL } from "../../../../Paths/client/Reseption";
+import { SEND_DATA_APPOINTMENT_URL } from "../../../../Paths/client/Reseption";
+import { SEND_DATA_CANCEL_APPOINTMENT_URL } from "../../../../Paths/client/Reseption";
 
 //КОМПАНЕНТЫ
 import BtnBack from "../../../Other/BtnBack";

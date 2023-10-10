@@ -3,7 +3,6 @@ import React from "react";
 import Profile from "./ProfileNav";
 import requestFunc from "../../js/requestFunc";
 
-import { PROFILE_INFO_URL } from "../../js/paths";
 
 
 class ProfileAPIContainer extends React.Component{

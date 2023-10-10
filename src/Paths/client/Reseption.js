@@ -20,3 +20,6 @@ export const GET_DATA_FOR_CALENDAR_URL = BASE_URL + '/api/get-data-for-calendar'
 
 //Дата план выбор мастера
 export const GET_DATA_FOR_DATE_MASTER_URL = BASE_URL + '/api/get-master-data-date-client'               //Получить все окна мастера за указанную дату
+//Взято выше
+//export const SEND_DATA_APPOINTMENT_URL = BASE_URL + '/api/send-data-appointment-client'               //Записаться на прием
+//export const SEND_DATA_CANCEL_APPOINTMENT_URL = BASE_URL + '/api/send-data-cancel-appointment-client' //Отменить записаться на прием

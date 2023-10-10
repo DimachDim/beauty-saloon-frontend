@@ -3,8 +3,8 @@ import requestFunc from "../../../js/requestFunc";
 import './Style.css'
 
 //URLS
-import { GET_DATA_SERVICES_URL } from "../../../js/Paths/Client";
-import { SEND_ID_SERVICE_URL } from '../../../js/Paths/Client';
+import { GET_DATA_SERVICES_URL } from "../../../Paths/client/Reseption";
+import { SEND_ID_SERVICE_URL } from "../../../Paths/client/Reseption";
 
 //КОМПАНЕНТЫ
 import BtnBack from '../../Other/BtnBack'

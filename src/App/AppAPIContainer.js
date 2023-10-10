@@ -1,10 +1,10 @@
 import React from "react";
 import './App.css'
-
-
 import getCookie from "../js/getCookie";
 import requestFunc from "../js/requestFunc";
-import {PROFILE_INFO_URL} from '../js/paths'
+
+//URLS
+import { PROFILE_INFO_URL } from "../Paths/Aut";
 
 //Компаненты
 import ForBoss from "./ForBoss";

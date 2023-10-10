@@ -1,9 +1,9 @@
 import React from "react";
 import requestFunc from "../../../js/requestFunc";
 //URLS
-import { GET_SERVICES_URL } from "../../../js/paths";
-import { ADD_SERVICE_URL } from "../../../js/paths";
-import { DEL_SERVICE_URL } from "../../../js/paths";
+import { GET_SERVICES_URL } from "../../../Paths/boss/BossSetting";
+import { ADD_SERVICE_URL } from "../../../Paths/boss/BossSetting";
+import { DEL_SERVICE_URL } from "../../../Paths/boss/BossSetting";
 
 //КОМПАНЕНТЫ
 import Specialization from "./Specialization";

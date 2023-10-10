@@ -2,10 +2,10 @@ import React from "react";
 
 import requestFunc from "../../js/requestFunc";
 //URLS
-import { TRANSFER_TIME_URL } from "../../js/paths";
-import { GET_DATA_DATE_URL } from "../../js/paths";
-import { DEL_DATA_DATE_URL } from "../../js/paths";
-import { GET_DATA_FORM_DATE_PLAN_URL } from "../../js/Paths/Master";
+import { TRANSFER_TIME_URL } from "../../Paths/master/DataPlan";
+import { GET_DATA_DATE_URL } from "../../Paths/master/DataPlan";
+import { DEL_DATA_DATE_URL } from "../../Paths/master/DataPlan";
+import { GET_DATA_FORM_DATE_PLAN_URL } from "../../Paths/master/DataPlan";
 
 //КОМПАНЕНТЫ
 import DatePlanMaster from "./Plan/DatePlanMaster";
@@ -48,8 +48,9 @@ class DatePlanAPIContainer extends React.Component{
             if(serverAnswer.data != undefined){
                 //Передаем данные в состояние
                 this.props.transferDataDate(serverAnswer.data)
+            }else{
+                console.log("ДАнные не пришли")
             }
-            console.log(serverAnswer.data)
             
         }
         
@@ -122,7 +123,7 @@ class DatePlanAPIContainer extends React.Component{
 
     
     render(){
-        console.log(this.props)
+        //console.log(this.props)
         
         return <DatePlanMaster
                     //Для обозначения даты

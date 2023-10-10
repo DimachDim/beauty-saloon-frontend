@@ -2,9 +2,9 @@ import React from "react";
 import requestFunc from '../../../js/requestFunc'
 
 //URLS
-import { GET_DATA_FOR_SETTING_SERVICES_URL } from "../../../js/Paths/Master";
-import { SEND_DATA_ADD_SERVICES_URL } from "../../../js/Paths/Master";
-import { SEND_DATA_DEL_SERVICES_URL } from "../../../js/Paths/Master";
+import { GET_DATA_FOR_SETTING_SERVICES_URL } from "../../../Paths/master/SettingMaster";
+import { SEND_DATA_ADD_SERVICES_URL } from "../../../Paths/master/SettingMaster";
+import { SEND_DATA_DEL_SERVICES_URL } from "../../../Paths/master/SettingMaster";
 
 //КОМПАНЕНТЫ
 import BtnBack from '../../Other/BtnBack'
