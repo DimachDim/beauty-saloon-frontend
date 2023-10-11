@@ -7,8 +7,8 @@ import ProfileContainer from "../components/12 Profile/ProfileContainer";
 import UsersContainer from "../components/13 Users/UsersContainer";
 
 import SettingsBoss from "../components/21 SettingsBoss/SettingsBoss";
-import SpecializationsContainer from "../components/21 SettingsBoss/1 Specializations/SpecializationsContainer";
-import ServicesContainer from "../components/21 SettingsBoss/2 Services/ServicesContainer";
+import SpecializationsContainer from "../components/21 SettingsBoss/211 Specializations/SpecializationsContainer";
+import ServicesContainer from "../components/21 SettingsBoss/212 Services/ServicesContainer";
 
 
 let ForBoss = (props) => {

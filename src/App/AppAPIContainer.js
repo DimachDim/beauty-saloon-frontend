@@ -11,7 +11,7 @@ import ForBoss from "./ForBoss";
 import ForMaster from "./ForMaster";
 import ForClient from './ForClient'
 import AutContainer from "../components/1 Autentification/AutContainer";
-import PopUpContainer from '../components/PopUp/PopUpContainer'
+import PopUpContainer from '../components/13 PopUp/PopUpContainer'
 
 
 

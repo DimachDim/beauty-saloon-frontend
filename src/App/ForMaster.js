@@ -8,8 +8,8 @@ import ProfileContainer from "../components/12 Profile/ProfileContainer";
 import UsersContainer from "../components/13 Users/UsersContainer";
 import DatePlanContainer from "../components/33 DatePlanMaster/DatePlanContainer";
 import SettingsMaster from "../components/31 SettingsMaster/SettingsMaster";
-import SpecializationContainer from "../components/31 SettingsMaster/1. MasterSpecialization/SpecializationContainer";
-import ServecesContainer from "../components/31 SettingsMaster/2. MasterServeces/ServecesContainer";
+import SpecializationContainer from "../components/31 SettingsMaster/311 MasterSpecialization/SpecializationContainer";
+import ServecesContainer from "../components/31 SettingsMaster/312 MasterServeces/ServecesContainer";
 
 let ForMaster = (props) => {
     //console.log(props)
