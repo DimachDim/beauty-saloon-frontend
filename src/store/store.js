@@ -1,12 +1,9 @@
 import { combineReducers, createStore } from 'redux';
 //Редюсеры
-import rediserMain from './redusers/rediserMain';
-import rediserUsers from './redusers/rediserUsers';
-import rediserSchedule from './redusers/rediserSchedule';
-import rediserSettings from './redusers/rediserSettings';
-
-import clientReduser from '../store/Client/clientReduser'
-import masterReduser from './Master/masterReduser';
+import reduserGeneral from './1 General/reduserGeneral';
+import reduserBoss from './2 Boss/reduserBoss';
+import reduserMaster from './3 Master/reduserMaster';
+import reduserClient from './4 Client/reduserClient';
 
 
 
@@ -19,13 +16,13 @@ store.subscribe() — подписка на изменения store.
 */
 
 const rootReduser = combineReducers({
-    reduserMain: rediserMain,
-    rediserUsers: rediserUsers,   
-    rediserSchedule: rediserSchedule, 
-    rediserSettings: rediserSettings,
+    
 
-    masterR: masterReduser,
-    clientR: clientReduser,
+
+    rGeneral:reduserGeneral,
+    rBoss: reduserBoss,
+    rMaster: reduserMaster,
+    rClient: reduserClient,
 })
 
 const store = createStore(rootReduser)

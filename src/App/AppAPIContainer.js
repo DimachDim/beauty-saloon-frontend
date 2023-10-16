@@ -1,18 +1,17 @@
 import React from "react";
 import './App.css'
-
-
 import getCookie from "../js/getCookie";
 import requestFunc from "../js/requestFunc";
-import {PROFILE_INFO_URL} from '../js/paths'
+
+//URLS
+import { PROFILE_INFO_URL } from "../Paths/Aut";
 
 //Компаненты
 import ForBoss from "./ForBoss";
 import ForMaster from "./ForMaster";
 import ForClient from './ForClient'
-import ProfileContainer from "../components/Profile/ProfileContainer";
-import AutContainer from "../components/Autentification/AutContainer";
-import PopUpContainer from '../components/PopUp/PopUpContainer'
+import AutContainer from "../components/1 Autentification/AutContainer";
+import PopUpContainer from '../components/13 PopUp/PopUpContainer'
 
 
 
