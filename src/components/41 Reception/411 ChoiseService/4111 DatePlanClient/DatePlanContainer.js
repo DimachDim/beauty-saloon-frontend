@@ -4,16 +4,16 @@ import { connect } from "react-redux";
 import DatePlanAPIContainer from "./DatePlanAPIContainer";
 
 //Экшены
-import { trDataDateAC } from "../../../../store/Client/actions";
+import { trDataDateAC } from "../../../../store/4 Client/41actions";
 
 
 let mapStateToProps = (state) => {
     return{
-        SID: state.reduserMain.SID,                         //Сессия
+        SID: state.rGeneral.SID,                            //Сессия
         
-        selectDate: state.rediserSchedule.selectDate,       //Выбранная дата
-        idSelectServ: state.clientR.idSelectServ,           //Хранит id выбранной услуги
-        arrDataDate: state.clientR.arrDataDate,             //Хранит информацию для плана даты
+        selectDate: state.rClient.selectDate,               //Выбранная дата
+        idSelectServ: state.rClient.idSelectServ,           //Хранит id выбранной услуги
+        arrDataDate: state.rClient.arrDataDate,             //Хранит информацию для плана даты
         
         
     }

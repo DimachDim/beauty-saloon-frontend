@@ -4,17 +4,16 @@ import { connect } from "react-redux";
 import DatePlanAPIContainer from "./DatePlanAPIContainer";
 
 //Экшены
-import { transferDataDateAC } from "../../store/Master/actions";
-import { trDataFormDatePlanAC } from "../../store/Master/actions";
+import { transferDataDateAC } from "../../store/3 Master/33actions";
+import { trDataFormDatePlanAC } from "../../store/3 Master/33actions";
 
 
 let mapStateToProps = (state) => {
     return{
-        SID: state.reduserMain.SID,                         //Сессия
-        selectDate: state.rediserSchedule.selectDate,       //Выбранная дата
-        dataDate: state.masterR.dataDate,                   //Данные за выбранную дату
-
-        dataFormDatePlan: state.masterR.dataFormDatePlan,   //Данные для формы
+        SID: state.rGeneral.SID,                            //Сессия
+        selectDate: state.rMaster.selectDate,               //Выбранная дата
+        dataDate: state.rMaster.dataDate,                   //Данные за выбранную дату
+        dataFormDatePlan: state.rMaster.dataFormDatePlan,   //Данные для формы
     }
 }
 

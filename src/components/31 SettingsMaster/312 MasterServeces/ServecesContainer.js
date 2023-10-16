@@ -4,15 +4,14 @@ import { connect } from "react-redux";
 import ServecesAPIContainer from "./ServecesAPIContainer";
 
 //Экшены
-import {trDataForSetingServiceAC} from '../../../store/Master/actions'
+import {trDataForSetingServiceAC} from '../../../store/3 Master/31actions'
 
 
 
 let mapStateToProps = (state) => {
     return{
-        SID: state.reduserMain.SID,
-        
-        dataForSetingServices: state.masterR.dataForSetingServices,     //Массив с данными для настройки услуг
+        SID: state.rGeneral.SID,
+        dataForSetingServices: state.rMaster.dataForSetingServices,     //Массив с данными для настройки услуг
         
     }
 }

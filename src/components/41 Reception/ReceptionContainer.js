@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import ReceptionAPIContainer from "./ReceptionAPIContainer";
 
 //Экшены
-import {cleanState} from '../../store/Client/actions'
+import {cleanState} from '../../store/4 Client/41actions'
 
 
 

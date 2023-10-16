@@ -4,19 +4,18 @@ import { connect } from "react-redux";
 import NavBarAPIContainer from "./ProfileAPIContainer";
 
 //Экшены
-import {navAC} from "../../store/actions"
-import { textErorAC } from "../../store/actions";
-import { getInfoProfileAC } from "../../store/actions";
+import {navAC} from "../../store/1 General/actions"
+import { textErorAC } from "../../store/1 General/actions";
 
 
 
 
 let mapStateToProps = (state) => {
     return{
-        textEror: state.reduserMain.textEror,   //Текст ошибки
-        nav: state.reduserMain.nav,             //Навигация
-        SID: state.reduserMain.SID,             //Сессия
-        user: state.reduserMain.user,           //Инфо о пользователе
+        textEror: state.rGeneral.textEror,   //Текст ошибки
+        nav: state.rGeneral.nav,             //Навигация
+        SID: state.rGeneral.SID,             //Сессия
+        user: state.rGeneral.user,           //Инфо о пользователе
     }
 }
 

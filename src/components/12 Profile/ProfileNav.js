@@ -1,5 +1,5 @@
 import React from "react";
-import { navAC } from "../../store/actions";
+
 
 
 //Компанента отвечает за отображение интерфейса входа

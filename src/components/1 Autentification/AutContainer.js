@@ -4,17 +4,16 @@ import { connect } from "react-redux";
 import AutAPIContainer from "./AutAPIContainer";
 
 //Экшены
-import {navAC} from "../../store/actions"
-import { textErorAC } from "../../store/actions";
-import { getSidAC } from "../../store/actions";
+import {navAC} from "../../store/1 General/actions"
+import { textErorAC } from "../../store/1 General/actions";
+import { getSidAC } from "../../store/1 General/actions";
 
 
 
 let mapStateToProps = (state) => {
     return{
-        textEror: state.reduserMain.textEror,   //Текст ошибки
-        nav: state.reduserMain.nav,             //Навигация
-        
+        textEror: state.rGeneral.textEror,   //Текст ошибки
+        nav: state.rGeneral.nav,             //Навигация
     }
 }
 

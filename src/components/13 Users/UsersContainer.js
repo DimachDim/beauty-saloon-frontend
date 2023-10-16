@@ -4,17 +4,16 @@ import { connect } from "react-redux";
 import UsersAPIContainer from "./UsersAPIContainer";
 
 //Экшены
-import { getUsersAC } from "../../store/actions";
-import { getStatusesAC } from "../../store/actions";
+import { getUsersAC } from "../../store/1 General/actions";
+import { getStatusesAC } from "../../store/1 General/actions";
 
 
 let mapStateToProps = (state) => {
     return{
-        SID: state.reduserMain.SID,     //Сессия
-        user: state.reduserMain.user,   //Данные пользователя
-        
-        users: state.rediserUsers.users,            //Список пользователей
-        statuses: state.rediserUsers.statuses,      //Список статусов       
+        SID: state.rGeneral.SID,     //Сессия
+        user: state.rGeneral.user,   //Данные пользователя
+        users: state.rGeneral.users,            //Список пользователей
+        statuses: state.rGeneral.statuses,      //Список статусов       
     }
 }
 

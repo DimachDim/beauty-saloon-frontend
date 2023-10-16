@@ -5,15 +5,15 @@ import ChoiseServiceAPIContainer from "./ChoiseServiceAPIContainer";
 
 
 //Экшены
-import { trSpecWithServAC } from "../../../store/Client/actions";
-import { trFreeDatesAC } from "../../../store/Client/actions";
-import { trIdServeceAC } from "../../../store/Client/actions";
+import { trSpecWithServAC } from "../../../store/4 Client/41actions";
+import { trFreeDatesAC } from "../../../store/4 Client/41actions";
+import { trIdServeceAC } from "../../../store/4 Client/41actions";
 
 
 let mapStateToProps = (state) => {
     return{
-        SID: state.reduserMain.SID,                     
-        specWithServ: state.clientR.specWithServ
+        SID: state.rGeneral.SID,                     
+        specWithServ: state.rClient.specWithServ
     }
 }
 

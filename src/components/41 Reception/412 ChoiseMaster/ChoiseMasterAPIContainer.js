@@ -44,7 +44,7 @@ class ChoiseMasterAPIContainer extends React.Component{
             //Отправляем данные в состояние
             this.props.trDataForCalendarAC(serverAnswer.data)
             //Отправляем в состояние id мастера
-            this.props.trIdServeceAC(idMaster)
+            this.props.trIdMasterAC(idMaster)
         }else{
             console.log("Данные не пришли")
         }

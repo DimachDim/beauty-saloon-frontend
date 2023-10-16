@@ -4,15 +4,15 @@ import { connect } from "react-redux";
 import SpecializationsAPIContainer from "./SpecializationsAPIContainer";
 
 //Экшены
-import { transferDataSpecializationAC } from "../../../store/actions";
-import { dataPopUpAC } from "../../../store/actions";
+import { transferDataSpecializationAC } from "../../../store/2 Boss/21actions";
+import { dataPopUpAC } from "../../../store/1 General/actions";
 
 
 
 let mapStateToProps = (state) => {
     return{
-        SID: state.reduserMain.SID,                                         //Сессия
-        specializations: state.rediserSettings.specializations,             //Специализации  
+        SID: state.rGeneral.SID,                                         //Сессия
+        specializations: state.rBoss.specializations,             //Специализации  
         
     }
 }

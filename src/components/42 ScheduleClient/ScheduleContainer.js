@@ -4,14 +4,14 @@ import { connect } from "react-redux";
 import ScheduleAPIContainer from "./ScheduleAPIContainer";
 
 //Экшены
-import { transferInfoDateAC } from "../../store/actions";
+import { transferInfoDateAC } from "../../store/4 Client/42actions";
 
 
 
 let mapStateToProps = (state) => {
     return{
-        arrFreeDates: state.clientR.arrFreeDates,               //Данные о свободных датах
-        arrDataForCalendar: state.clientR.arrDataForCalendar    //Данные в какой дате есть свободные окна у мастера а в какой нету
+        arrFreeDates: state.rClient.arrFreeDates,               //Данные о свободных датах
+        arrDataForCalendar: state.rClient.arrDataForCalendar    //Данные в какой дате есть свободные окна у мастера а в какой нету
         
     }
 }

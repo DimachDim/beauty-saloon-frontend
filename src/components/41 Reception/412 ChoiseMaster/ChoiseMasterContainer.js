@@ -4,15 +4,15 @@ import { connect } from "react-redux";
 import ChoiseMasterAPIContainer from "./ChoiseMasterAPIContainer";
 
 //Экшены
-import { trDataMastersAC } from "../../../store/Client/actions";
-import { trDataForCalendarAC } from "../../../store/Client/actions";
-import { trIdServeceAC } from "../../../store/Client/actions";
+import { trDataMastersAC } from "../../../store/4 Client/41actions";
+import { trDataForCalendarAC } from "../../../store/4 Client/41actions";
+import { trIdMasterAC } from "../../../store/4 Client/41actions";
 
 
 
 let mapStateToProps = (state) => {
     return{
-        arrDataMasters: state.clientR.arrDataMasters    //Хранит информацию о мастерах        
+        arrDataMasters: state.rClient.arrDataMasters    //Хранит информацию о мастерах        
         
     }
 }
@@ -32,8 +32,8 @@ let mapDispatchToProps = (dispatch ) => {
         }, 
 
         //Передает id выбранного мастера
-        trIdServeceAC: (arrData) =>{
-            dispatch(trIdServeceAC(arrData))
+        trIdMasterAC: (arrData) =>{
+            dispatch(trIdMasterAC(arrData))
         }, 
         
         

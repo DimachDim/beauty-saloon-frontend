@@ -4,19 +4,19 @@ import { connect } from "react-redux";
 import ServicesAPIContainer from "./ServicesAPIContainer";
 
 //Экшены
-import { transferDataSpecializationAC } from "../../../store/actions";
-import { transDataServicesAC } from "../../../store/actions";
-import { transDataSpecServicessAC } from "../../../store/actions";
+import { transferDataSpecializationAC } from "../../../store/2 Boss/21actions";
+import { transDataServicesAC } from "../../../store/2 Boss/21actions";
+import { transDataSpecServicessAC } from "../../../store/2 Boss/21actions";
 
 
 
 let mapStateToProps = (state) => {
     return{
         
-        specializations: state.rediserSettings.specializations,             //Специализации  
-        services: state.rediserSettings.services,                           //Услуги  
-        specWithServices: state.rediserSettings.specWithServices,           //Совмещенный массив
-        SID: state.reduserMain.SID,   
+        specializations: state.rBoss.specializations,             //Специализации  
+        services: state.rBoss.services,                           //Услуги  
+        specWithServices: state.rBoss.specWithServices,           //Совмещенный массив
+        SID: state.rGeneral.SID,   
     }
 }
 

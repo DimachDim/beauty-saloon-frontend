@@ -1,37 +1,63 @@
-import * as actions from './actionType'
+import * as actionTypes from './actionType'
 
 let defState = {   
    
+    //========== 311 ==========
+    //Специализации
+    specializations : [],
+
+
+    //========== 312 ==========
     //Массив с данными для настройки услуг
     dataForSetingServices: [], 
 
-    //Массив с данными для формы добавления времени для окна даты
-    dataFormDatePlan: [],
+
+    
+    
+    //========== 33 ==========
+    //Вбранная дата (при клике даты в календаре)
+    selectDate : undefined,
 
     //Данные за выбранную дату
-    dataDate: []
+    dataDate: [],
+
+    //Массив с данными для формы добавления времени для окна даты
+    dataFormDatePlan: [],
 }
 
-export default function masterReduser(state = defState, action){   
+export default function reduserMaster(state = defState, action){   
     switch(action.type){
 
+        //========== 311 ==========
+        case actionTypes.TRANSFER_DATA_SPECIALIZATION:{
+            let stateCopy = {...state}
+            stateCopy.specializations = action.payload
+            return stateCopy
+        }
+
+
+
+        //========== 312 ==========
         //Передаем данные для настройки услуг
-        case actions.TRANSP_DATA_FOR_SETING_SERVICE:{
+        case actionTypes.TRANSP_DATA_FOR_SETING_SERVICE:{
             let stateCopy = {...state}
             stateCopy.dataForSetingServices = action.payload
-
             return stateCopy
         }
 
-        //Передаем данные для формы окна даты
-        case actions.TRANSP_DATA_FORM_DATE_PLAN:{
+
+
+        //========= 33 ============
+        //Передает данные о выбранной дате
+        case actionTypes.TRANSFER_INFO_DATE:{
             let stateCopy = {...state}
-            stateCopy.dataFormDatePlan = action.payload
+            stateCopy.selectDate = action.payload
+
             return stateCopy
         }
 
-        //Передает данные из базы расписаний на выбранную дату
-        case actions.TRANSP_DATA_DATE:{
+         //Передает данные из базы расписаний на выбранную дату
+         case actionTypes.TRANSP_DATA_DATE:{
             let stateCopy = {...state}
             //Получаем массив
             let arr = action.payload
@@ -61,6 +87,13 @@ export default function masterReduser(state = defState, action){
             return stateCopy
         }
 
+        //Передаем данные для формы окна даты
+        case actionTypes.TRANSP_DATA_FORM_DATE_PLAN:{
+            let stateCopy = {...state}
+            stateCopy.dataFormDatePlan = action.payload
+            return stateCopy
+        }
+       
 
         default:
             return state

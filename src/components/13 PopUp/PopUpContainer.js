@@ -4,15 +4,13 @@ import { connect } from "react-redux";
 import PopUpAPIContainer from "./PopUpAPIContainer";
 
 //Экшены
-import { dataPopUpAC } from "../../store/actions";
+import { dataPopUpAC } from "../../store/1 General/actions";
 
 
 
 let mapStateToProps = (state) => {
     return{
-        popUp: state.reduserMain.popUp,   //Текст ошибки
-        
-        
+        popUp: state.rGeneral.popUp,   //Текст ошибки
     }
 }
 

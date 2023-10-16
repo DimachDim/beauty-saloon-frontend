@@ -4,16 +4,16 @@ import { connect } from "react-redux";
 import AppAPIContainer from "./AppAPIContainer";
 
 //Экшены
-import { getSidAC } from "../store/actions";
-import { getInfoProfileAC } from "../store/actions";
+import { getSidAC } from "../store/1 General/actions";
+import { getInfoProfileAC } from "../store/1 General/actions";
 
 
 
 
 let mapStateToProps = (state) => {
     return{
-        SID: state.reduserMain.SID,             //Сессия
-        user: state.reduserMain.user,           //Данные текущего пользователя
+        SID: state.rGeneral.SID,             //Сессия
+        user: state.rGeneral.user,           //Данные текущего пользователя
         
     }
 }

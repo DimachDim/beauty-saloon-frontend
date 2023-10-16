@@ -8,7 +8,7 @@ import LogoutAPIContainer from "./LogoutAPIContainer";
 
 let mapStateToProps = (state) => {
     return{
-        SID: state.reduserMain.SID,             //Сессия
+        SID: state.rGeneral.SID,             //Сессия
         
     }
 }
