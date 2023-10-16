@@ -25,6 +25,7 @@ class LogoutAPIContainer extends React.Component{
         
         //обнавляем страницу
         window.location.reload()
+        window.location ='/'
     }
     
     

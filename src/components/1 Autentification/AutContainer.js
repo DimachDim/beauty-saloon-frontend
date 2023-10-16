@@ -12,7 +12,7 @@ import { getSidAC } from "../../store/1 General/actions";
 
 let mapStateToProps = (state) => {
     return{
-        textEror: state.rGeneral.textEror,   //Текст ошибки
+        textError: state.rGeneral.textEror,   //Текст ошибки
         nav: state.rGeneral.nav,             //Навигация
     }
 }

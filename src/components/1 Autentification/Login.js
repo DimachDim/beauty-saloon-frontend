@@ -1,16 +1,40 @@
 import React from "react";
-//import './Login.css'
 
-//Компанента отвечает за отображение интерфейса входа
 
 let Login = (props) => {
-    //console.log(props)
     
+    let textError = props.textError
+    let loginAPI = props.loginAPI
+    let textErrorAC = props.textErrorAC
+
     //Ссылки на инпуты
     let inpPhone = React.createRef();
     let inpPassword = React.createRef();
     
-    
+    //Валидация формы
+    function valudation(phone, password){
+        
+        let erorFlag = false                //Флаг на ишибку
+
+        //Вытаскиваем содержимое полей
+        phone = phone.current.value
+        password = password.current.value
+
+        //Проверяем не пустые ли данные
+        switch(''){
+            case phone: textErrorAC('Укажите телефон'); erorFlag=true; break
+            case password: textErrorAC('Введите пароль'); erorFlag=true; break
+            default: erorFlag = false;
+        }
+        
+        //Если нет ошибок
+        if(!erorFlag){
+            //Отправляем данные на сервер
+            loginAPI(phone,password)
+        }
+
+            
+    }
     
     
     return (
@@ -25,13 +49,11 @@ let Login = (props) => {
             <input type='password' ref={inpPassword}/>
 
             {/* ТЕКСТ ОШИБКИ */}
-            <p>{props.textEror}</p>
+            <p>{textError}</p>
 
             {/* КНОПКА ВВОДА */}
-            {}
-            <button 
-                onClick={() => props.handlingLoginForm(inpPhone, inpPassword)}
-            >Войти
+            <button onClick={() => valudation(inpPhone, inpPassword)}>
+                Войти
             </button>
 
         </div>
